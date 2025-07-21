@@ -42,7 +42,7 @@ export default function Navbar(props) {
             <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
             <button className="btn btn-outline-primary" type="submit">Search</button>
           </form>
-
+          
           {/* Dark Mode Toggle */}
           <div className="form-check form-switch">
             <input

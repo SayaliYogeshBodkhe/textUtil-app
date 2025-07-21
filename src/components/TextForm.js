@@ -66,13 +66,13 @@ export default function TextForm(props) {
         </textarea>
 
       <div className="my-3">
-        <button className="btn btn-outline-primary mx-2 my-1" onClick={handlerUpClick}>Uppercase</button>
-        <button className="btn btn-outline-primary mx-2 my-1" onClick={handlerLowClick}>Lowercase</button>
-        <button className="btn btn-outline-primary mx-2 my-1" onClick={handlerClrTextClick}>Clear</button>
-        <button className="btn btn-outline-primary mx-2 my-1" onClick={handlerCopyTextClick}>Copy</button>
-        <button className="btn btn-outline-primary mx-2 my-1" onClick={handlerCutTextClick}>Cut</button>
-        <button className="btn btn-outline-primary mx-2 my-1" onClick={handlerPasteTextClick}>Paste</button>
-        <button className="btn btn-outline-primary mx-2 my-1" onClick={handlerRemoveSpaceClick}>Remove Spaces</button>
+        <button disabled={text.length===0}className="btn btn-outline-primary mx-2 my-1" onClick={handlerUpClick}>Uppercase</button>
+        <button disabled={text.length===0}className="btn btn-outline-primary mx-2 my-1" onClick={handlerLowClick}>Lowercase</button>
+        <button disabled={text.length===0}className="btn btn-outline-primary mx-2 my-1" onClick={handlerClrTextClick}>Clear</button>
+        <button disabled={text.length===0}className="btn btn-outline-primary mx-2 my-1" onClick={handlerCopyTextClick}>Copy</button>
+        <button disabled={text.length===0}className="btn btn-outline-primary mx-2 my-1" onClick={handlerCutTextClick}>Cut</button>
+        <button disabled={text.length===0}className="btn btn-outline-primary mx-2 my-1" onClick={handlerPasteTextClick}>Paste</button>
+        <button disabled={text.length===0}className="btn btn-outline-primary mx-2 my-1" onClick={handlerRemoveSpaceClick}>Remove Spaces</button>
       </div>
 
       <h2 className="my-3">Text Summary</h2>
